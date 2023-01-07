@@ -9897,7 +9897,7 @@ end)
 --Onyx ware paid modules			
 
 runcode(function()
-	local Texturepack = GuiLibrary["ObjectsThatCanBeSaved"]["PaidWindow"]["Api"].CreateOptionsButton({
+	local Texturepack = GuiLibrary["ObjectsThatCanBeSaved"]["OnyxWarePaidWindow"]["Api"].CreateOptionsButton({
 		Name = "TexturePack",
 		Function = function(callback) 
 			if callback then
@@ -9919,7 +9919,7 @@ runcode(function()
 end)
 							
 local SmallWeapons = {["Enabled"] = false}
-SmallWeapons = GuiLibrary["ObjectsThatCanBeSaved"]["PaidWindow"]["Api"].CreateOptionsButton({
+SmallWeapons = GuiLibrary["ObjectsThatCanBeSaved"]["OnyxWarePaidWindow"]["Api"].CreateOptionsButton({
     ["Name"] = "Small Weapons",
        ["Function"] = function(Callback)
             Enabled = Callback
@@ -9946,7 +9946,7 @@ SmallWeapons = GuiLibrary["ObjectsThatCanBeSaved"]["PaidWindow"]["Api"].CreateOp
 
 runcode(function()
 	local AutoWin30v30 = {["Enabled"] = false}
-	AutoWin30v30 = GuiLibrary["ObjectsThatCanBeSaved"]["PaidWindow"]["Api"].CreateOptionsButton({
+	AutoWin30v30 = GuiLibrary["ObjectsThatCanBeSaved"]["OnyxWarePaidWindow"]["Api"].CreateOptionsButton({
 		["Name"] = "30v30AutoWin",
 		["Function"] = function(callback)
 			if callback then
@@ -9997,7 +9997,7 @@ runcode(function()
 		end
 	})
 	local DuelsAutoWin = {["Enabled"] = false}
-	DuelsAutoWin = GuiLibrary["ObjectsThatCanBeSaved"]["PaidWindow"]["Api"].CreateOptionsButton({
+	DuelsAutoWin = GuiLibrary["ObjectsThatCanBeSaved"]["OnyxWarePaidWindow"]["Api"].CreateOptionsButton({
 		["Name"] = "DuelsAutoWin",
 		["Function"] = function(callback)
 			if callback then
