@@ -4810,7 +4810,7 @@ runcode(function()
 							local newval = damagetimer ~= 0
 							if changecheck ~= newval then 
 								if newval then 
-									longjumpacprogressbarframe2:TweenSize(UDim2.new(0, 0, 0, 20), Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 2.5, true)
+									longjumpacprogressbarframe2:TweenSize(UDim2.new(1, 0, 0, 20), Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 2.5, true)
 								else
 									longjumpacprogressbarframe2:TweenSize(UDim2.new(1, 0, 0, 20), Enum.EasingDirection.InOut, Enum.EasingStyle.Linear, 0, true)
 								end
@@ -4884,9 +4884,9 @@ runcode(function()
 	sliderval2 = longjump.CreateSlider({
 		Name = "Speed",
 		Min = 1,
-		Max = 50,
+		Max = 80,
 		Function = function() end,
-		Default = 50
+		Default = 70
 	})
 end)
 
