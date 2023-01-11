@@ -4735,9 +4735,9 @@ runcode(function()
 				if not longjump["Enabled"] then return end
 				pos = pos - (entity.character.HumanoidRootPart.CFrame.lookVector * 0.2)
 				local origpos = pos
-				local offsetshootpos = (CFrame.new(pos, pos + Vector3.new(0, 0, 0)) * CFrame.new(Vector3.new(-bedwars["BowConstantsTable"].RelX, -bedwars["BowConstantsTable"].RelY, -bedwars["BowConstantsTable"].RelZ))).p
-				bedwars["BowTable"]:createLocalProjectile(bedwars["ProjectileMeta"]["fireball"], "fireball", "fireball", offsetshootpos, "", Vector3.new(0,0, 0), {drawDurationSeconds = 1})
-				bedwars["ClientHandler"]:Get(bedwars["ProjectileRemote"]):CallServerAsync(fireball["tool"], "fireball", "fireball", offsetshootpos, pos, Vector3.new(0,0, 0), game:GetService("HttpService"):GenerateGUID(true), {drawDurationSeconds = 1}, workspace:GetServerTimeNow() - 0.045)
+				local offsetshootpos = (CFrame.new(pos, pos + Vector3.new(0, -60, 0)) * CFrame.new(Vector3.new(-bedwars["BowConstantsTable"].RelX, -bedwars["BowConstantsTable"].RelY, -bedwars["BowConstantsTable"].RelZ))).p
+				bedwars["BowTable"]:createLocalProjectile(bedwars["ProjectileMeta"]["fireball"], "fireball", "fireball", offsetshootpos, "", Vector3.new(0, -60, 0), {drawDurationSeconds = 1})
+				bedwars["ClientHandler"]:Get(bedwars["ProjectileRemote"]):CallServerAsync(fireball["tool"], "fireball", "fireball", offsetshootpos, pos, Vector3.new(0, -60, 0), game:GetService("HttpService"):GenerateGUID(true), {drawDurationSeconds = 1}, workspace:GetServerTimeNow() - 0.045)
 			end)
 		end,
 		tnt = function(tnt, pos2)
@@ -5693,6 +5693,8 @@ runcode(function()
 		["die"] = "Bullying",
 		["lobby"] = "Bullying",
 		["ban"] = "Bullying",
+		["retard"] = "Bullying",
+		["idiot"] = "Bullying",
 		["wizard"] = "Bullying",
 		["wisard"] = "Bullying",
 		["witch"] = "Bullying",
